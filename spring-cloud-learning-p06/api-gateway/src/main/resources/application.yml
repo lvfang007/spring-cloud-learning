@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 14000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+## 网关配置，这里主要是别名配置，不配置，网关则使用默认服务id。如果配置了，则只能使用别名，不能使用服务id
+zuul:
+  routes:
+    api-p:
+      path: /api-p/**
+      serviceId: service-producer
+    api-c:
+      path: /api-c/**
+      serviceId: service-consumer

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-producer/eureka-producer.iml" filepath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-Feign/spring-cloud-Feign.iml" filepath="$PROJECT_DIR$/spring-cloud-Feign/spring-cloud-Feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-Hystrix/spring-cloud-Hystrix.iml" filepath="$PROJECT_DIR$/spring-cloud-Hystrix/spring-cloud-Hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-Hystrix-dashboard/spring-cloud-Hystrix-dashboard.iml" filepath="$PROJECT_DIR$/spring-cloud-Hystrix-dashboard/spring-cloud-Hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-Ribbon/spring-cloud-Ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud-Ribbon/spring-cloud-Ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-learning-p02.iml" filepath="$PROJECT_DIR$/spring-cloud-learning-p02.iml" />
+    </modules>
+  </component>
+</project>

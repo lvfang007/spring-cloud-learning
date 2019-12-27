@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway1/api-gateway1.iml" filepath="$PROJECT_DIR$/api-gateway1/api-gateway1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway2/api-gateway2.iml" filepath="$PROJECT_DIR$/api-gateway2/api-gateway2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway3/api-gateway3.iml" filepath="$PROJECT_DIR$/api-gateway3/api-gateway3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-producer/eureka-producer.iml" filepath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-learning-p11.iml" filepath="$PROJECT_DIR$/spring-cloud-learning-p11.iml" />
+    </modules>
+  </component>
+</project>

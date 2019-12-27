@@ -1,0 +1,30 @@
+server:
+  port: 12000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        ## 配置文件存储在Git
+        git:
+          uri: https://github.com/zhaoyibo/spring-cloud-study # 配置git仓库的地址
+          search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username:
+          password:
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+        ## 配置文件存储在本地
+#        native:
+#          search-locations: file:E:/properties/
+
+  ## 配置文件存储在默认src/main/resource下
+#  profiles:
+#    active: native
+
+

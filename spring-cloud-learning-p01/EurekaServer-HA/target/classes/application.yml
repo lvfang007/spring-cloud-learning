@@ -1,0 +1,7 @@
+
+###配置host 127.0.0.1 peer1 peer2 peer3，依次启动peer1和peer2以及peer3服务使其相互注册
+spring:
+  application:
+    name: eurka-server-HA
+  profiles:
+    active: peer3

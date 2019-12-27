@@ -1,0 +1,40 @@
+server:
+  port: 14000
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          ##开启通过服务中心的自动根据 serviceId 创建路由的功能。
+          enabled: true
+      routes:
+        - id: service-consumer
+          uri: lb://CONSUMER
+          order: 0
+          predicates:
+            - Path=/consumer/**
+          filters:
+            - StripPrefix=0
+            - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+
+          ##配合具体的路由规则
+#      routes:
+#        - id: default_path_to_http
+#          uri: https://windmt.com
+#          order: 10000
+#          predicates:
+#            - Path=/**
+#          filters:
+#            - SetPath=/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

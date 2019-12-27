@@ -1,0 +1,21 @@
+#服务端口
+server:
+  port: 7001
+
+#服务名称
+spring:
+  application:
+    name: eurka-server-peer1
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    ##表示是否将自己注册到 Eureka Server，默认为 true
+    registerWithEureka: true
+    ##因为自己是为注册中心，不需要检索服务（表示是否从 Eureka Server 获取注册信息，默认为 true）
+    fetchRegistry: true
+    serviceUrl:
+      ##设置与 Eureka Server 交互的地址
+      defaultZone: http://peer2:7002/eureka/,http://peer3:7003/eureka/
+

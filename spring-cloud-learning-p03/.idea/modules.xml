@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-producer/eureka-producer.iml" filepath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-Hystrix-Feign/spring-cloud-Hystrix-Feign.iml" filepath="$PROJECT_DIR$/spring-cloud-Hystrix-Feign/spring-cloud-Hystrix-Feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/spring-cloud-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/spring-cloud-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-learning-p03.iml" filepath="$PROJECT_DIR$/spring-cloud-learning-p03.iml" />
+    </modules>
+  </component>
+</project>

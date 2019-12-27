@@ -1,0 +1,51 @@
+server:
+  port: 14000
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#      routes:
+#        - id: producer_service
+#          uri: lb://SERVICE-PRODUCER
+#          order: 0
+#          predicates:
+#            - Path=/hello1/**
+#          filters:
+#            - StripPrefix=1
+#            # -------
+#            - name: RequestRateLimiter
+#              args:
+#                ## 用于限流的键的解析器的 Bean 对象名字
+#                key-resolver: '#{@remoteAddrKeyResolver}'
+#                ## 牌桶每秒填充平均速率
+#                redis-rate-limiter.replenishRate: 1
+#                ## 令牌桶容量
+#                redis-rate-limiter.burstCapacity: 2
+#            # -------
+#            - AddResponseHeader=X-Response-Default-Name,Default-lvfang
+  # -------
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  # -------
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,beans,env,metrics

@@ -1,0 +1,21 @@
+server:
+  port: 14000
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          ##开启通过服务中心的自动根据 serviceId 创建路由的功能。
+          enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
